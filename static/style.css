@@ -1,0 +1,298 @@
+/* Basic Reset */
+body, h1, h2, h3, select, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e2e2e2, #ffffff);
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+h3 {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+input[type="number"],
+select {
+  width: calc(100% - 22px);
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d7a);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.dropdown {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.dropdown-select {
+  width: calc(100% - 22px);
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #ffffff;
+}
+
+.dropdown-select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+h3,
+form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+form {
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h3,
+button {
+  text-align: center;
+}
+
+/* Section for Developer Information */
+#info {
+  margin-top: 30px;
+  padding: 20px;
+  background: #ffffff; /* White background for a clean, professional look */
+  color: #333; /* Dark text for optimal readability */
+  border-radius: 10px; /* Slightly rounded corners for a modern feel */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 0.95em; /* Slightly larger font size for better readability */
+  text-align: center; /* Center-align text for a clean presentation */
+  border: 1px solid #ddd; /* Light border for a more defined section */
+}
+
+#info h2 {
+  color: #222; /* Slightly darker gray for better contrast */
+  margin-bottom: 15px; /* Increased spacing below the heading */
+  font-size: 1.6em; /* Adjusted font size for a more prominent heading */
+  font-weight: 700; /* Bold heading for emphasis */
+}
+
+#info p {
+  margin: 10px 0; /* Consistent spacing between paragraphs */
+  font-size: 0.8em; /* Standard font size for readability */
+  line-height: 1.6; /* Improved line height for better readability */
+}
+
+#info p strong {
+  color: #333; /* Dark text color for labels for better readability */
+  font-weight: 700; /* Bold labels for emphasis */
+}
+
+#info {
+  line-height: 1.6; /* Consistent line height for readability */
+}
+
+/* Base styles (already provided) */
+
+/* Media Query for Tablets and Small Screens */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  input[type="number"],
+  select {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .dropdown-select {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #info {
+    font-size: 0.9em;
+    padding: 15px;
+  }
+
+  #info h2 {
+    font-size: 1.4em;
+  }
+
+  #info p {
+    font-size: 0.9em;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  input[type="number"],
+  select {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .dropdown-select {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  #info {
+    font-size: 0.85em;
+    padding: 10px;
+  }
+
+  #info h2 {
+    font-size: 1.3em;
+  }
+
+  #info p {
+    font-size: 0.85em;
+  }
+}
+
+h4 {
+  color: #444; /* Dark gray for readability */
+  margin-bottom: 10px; /* Spacing below the heading */
+  font-size: 1.2em; /* Adjusted font size for prominence */
+  font-weight: 600; /* Semi-bold for emphasis */
+  text-transform: capitalize; /* Capitalize first letter of each word */
+}
+
+input[type="number"],
+select {
+  width: calc(100% - 24px); /* Adjusted width to match padding and borders */
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+
