@@ -13,3 +13,4 @@ setuptools==72.1.0
 threadpoolctl==3.5.0
 Werkzeug==3.0.3
 wheel==0.44.0
+gunicorn 
